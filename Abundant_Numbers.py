@@ -1,10 +1,9 @@
-x=int(input())
-i=0
+a=int(input())
 sum=0
-for i in range(1,x//2+1):
-    if x%i==0:
-        sum+=i
-if sum>x:
-    print('True')
+for i in range(1,a,1):
+    if(a%i==0):
+        sum=sum+i
+if(sum>a):
+    print("True")
 else:
-    print('False')
+    print("False")
