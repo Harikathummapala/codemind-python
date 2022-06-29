@@ -1,8 +1,11 @@
 n=int(input())
-r=0
-sum=0
-while n>0:
- r=n%10
- sum=sum*10+r
- n=n//10
-print(sum)
+k=abs(n)
+rev=0
+while(k):
+    r=k%10
+    k=k//10
+    rev=rev*10+r
+if n>0:
+    print(rev)
+else:
+    print(-rev)
