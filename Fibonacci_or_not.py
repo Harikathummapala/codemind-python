@@ -1,16 +1,16 @@
-x=int(input())
+n=int(input())
 a=0
 b=1
-c=0
-c1=0
-for i in range(1,x+1):
+if a==n:
+    print(a)
+elif b==n:
+    print(b)
+while True:
     c=a+b
-    a=b
-    b=c
-    if(c==x):
+    if c==n:
         print(True)
         break
-    else:
-        c1=c1+1
-if c1==x:
+    elif c>n:
         print(False)
+        break
+    a,b=b,c
