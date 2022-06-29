@@ -1,12 +1,7 @@
-x=int(input())
-r=0
-sum=0
-a=x
-while x>0:
-    r=x%10
-    sum=sum*10+r
-    x=x//10
-if sum==a:
+n=input()
+p=n.upper()
+k=p[::-1]
+if p==k:
     print("True")
 else:
     print("False")
