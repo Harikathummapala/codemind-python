@@ -1,3 +1,3 @@
-p,t,r=map(float,input() .split())
-ci=p*(1+(t/100))**r
-print("%.2f"%ci)
+p,r,t=map(int,input().split())
+a=p*(1+r/100)**t
+print("{:.2f}".format(a))
