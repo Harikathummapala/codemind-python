@@ -1,9 +1,7 @@
-x=int(input())
-d=0
-while x>0:
-    r=x%10
-    if r>d:
-        d=r
-    x=x//10
-print(d)
-        
+n=int(input())
+k=[]
+while n:
+    r=n%10
+    n=n//10
+    k.append(r)
+print(max(k))
