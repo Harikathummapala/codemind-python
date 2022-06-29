@@ -4,8 +4,8 @@ s1=s1.lower()
 s2=s2.lower()
 s3=s1.split()
 s4=s2.split()
-k=[]
+p=[]
 for i in s4:
     if i in s3:
-        k.append(i)
-print(*k)
+        p.append(i)
+print(*p)
