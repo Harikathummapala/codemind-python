@@ -1,8 +1,7 @@
-x=int(input())
 import math
-s=math.sqrt(x)
-y=(s-math.floor(s))
-if y==0:
-    print(True)
+a=int(input())
+k=int(math.sqrt(a))
+if k*k==a:
+    print("True")
 else:
-    print(False)
+    print("False")
