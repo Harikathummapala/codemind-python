@@ -1,9 +1,10 @@
-x=int(input())
-a=list(map(int,input().strip().split()))
-k=int(input())
-sum=0
-for i in range( 0,x):
-    if a[i]<=k:
-        sum=sum+a[i]
-print(sum)
-        
+n=int(input())
+a=list(map(int,input().split()))
+b=int(input())
+s=0
+for i in range(n):
+    if a[i]>b:
+        break
+    else:
+        s=s+a[i]
+print(s)
