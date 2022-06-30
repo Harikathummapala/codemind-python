@@ -1,11 +1,12 @@
-x=int(input())
-a=list(map(int,input().split()))
+a=int(input())
+b=input()
+arr=list(b.split())
+mi=0
+for i in arr:
+    if len(i)>mi:
+        mi=len(i)
 c=0
-max=0
-for i in range(x):
-    if len(str(a[i]))>max:
-        max=len(str(a[i]))
-for i in range(x):
-    if len(str(a[i]))==max:
-        c=c+1
+for i in arr:
+    if len(i)==mi:
+        c+=1
 print(c)
