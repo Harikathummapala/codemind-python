@@ -1,12 +1,11 @@
-x=int(input())
-a=list(map(int,input().strip().split()))
-k=x//2
-sum=0
+n=int(input())
+a=list(map(int,input().split()))
+k=n//2
 sum1=0
-for i in range( 0,k):
-    sum=sum+a[i]
-for i in range(k,x):
+sum2=0
+for i in range(0,k):
     sum1=sum1+a[i]
-l=abs(sum-sum1)
+for i in range(k,n):
+    sum2=sum2+a[i]
+l=abs(sum1-sum2)
 print(l)
-    
