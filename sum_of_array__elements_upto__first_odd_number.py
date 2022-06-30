@@ -1,9 +1,10 @@
-x=int(input())
-a=list(map(int,input().strip().split()))
-sum=0
-for i in range( 0,x):
+n=int(input())
+a=list(map(int,input().split()))
+
+s=0
+for i in range(n):
     if a[i]%2!=0:
         break
-    sum=sum+a[i]
-print(sum)
-        
+    else:
+        s=s+a[i]
+print(s)
