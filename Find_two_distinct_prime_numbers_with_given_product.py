@@ -1,22 +1,17 @@
-def prime(a):
-    c=0
-    for i in range(1,a+1):
-        if a%i==0:
-            c+=1
-    if c==2:
-        return 1
-    else:
-        return 0
-a=int(input())
-c=0
-for i in range(1,a):
-    for j in range(1,a):
-        if prime(i)==1 and prime(j)==1:
-            if i*j==a:
-                c=1
-                print(i,j)
+n=int(input())
+so=0
+s=0
+for i in range(1,n):
+    if n%i==0:
+        f=0
+        for j in range(1,i+1):
+            if i%j==0:
+                f+=1
+        if f==2:
+            if so*i==n:
+                s+=1
+                print("%d %d"%(so,i))
                 break
-    if c==1:
-        break
-if c==0:
+            so=i
+if s==0:
     print("-1")
