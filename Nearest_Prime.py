@@ -1,32 +1,32 @@
-def prime(n):
-    if n==0 or n==1:
-        return False
-    else:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return False
-        else:
-            return True
-a=int(input())
-for i  in range(a):
-    n=int(input())
-    i=n
-    v=n
-    c1=0
-    c2=0
-    while True:
-        if prime(i):
-            z=i
+n=int(input())
+arr=[]
+for s in range(0,n):
+    e=int(input())
+    arr.append(e)
+for s in range(0,n):
+    f=0
+    frd=0
+    bkd=0
+    for i in range(arr[s]-1,0,-1):
+        f=0
+        for j in range(1,i+1):
+            if i%j==0:
+                f+=1
+        if f==2:
+            bkd=arr[s]-i
             break
-        i=i+1
-        c1=c1+1
-    while True:
-        if prime(v):
-            k=v
+    t=arr[s]
+    while t>0:
+        f=0
+        for j in range(1,t+1):
+            if t%j==0:
+                f+=1
+        if f==2:
+            fwd=t-arr[s]
             break
-        v=v-1
-        c2=c2+1
-    if c1>=c2:
-        print(k)
+        t+=1
+
+    if fwd<bkd:
+        print(t)
     else:
-        print(z)
+        print(i)
