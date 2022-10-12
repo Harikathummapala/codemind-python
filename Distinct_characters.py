@@ -1,10 +1,13 @@
-n=input()
-n1=n.lower()
-s=''
-for i in n1:
-    if i not in s and ord(i)!=32:
-        s=s+i
-k=list(s)
-k.sort()
-for i in k:
+s=input()
+s=s.lower()
+l=[]
+arr=[]
+for ch in s:
+    if ch.isalpha():
+        l.append(ch)
+for i in l:
+    if l.count(i)==1:
+        arr.append(i)
+arr.sort()
+for i in arr:
     print(i,end='')
