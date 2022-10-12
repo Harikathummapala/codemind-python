@@ -1,15 +1,11 @@
-m,n=map(int,input().split())
-a=[]
-e=0
-o=0
-for i in range(m):
+a,b=map(int,input().split())
+ev=[]
+od=[]
+for i in range(a):
     l=list(map(int,input().split()))
-    if len(l)==n:
-        a.append(l)
-for i in range(m):
-    for j in range(n):
-        if a[i][j]%2==0:
-            e=e+a[i][j]
+    for i in l:
+        if i%2==0:
+            ev.append(i)
         else:
-            o=o+a[i][j]
-print(e,o)
+            od.append(i)
+print(sum(ev),sum(od))
