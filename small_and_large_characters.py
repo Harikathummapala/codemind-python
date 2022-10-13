@@ -1,4 +1,3 @@
-n=input()
-s=n.split()
-for i in s:
-    print(min(i),max(i),end=" ")
+l=list(map(str,input().split()))
+for i in l:
+    print(min(i),max(i),end=' ')
