@@ -1,12 +1,12 @@
 s1=input()
+s1=s1.lower()
 s2=input()
-s3=s1.lower()
-s4=s2.lower()
-c=0
-for i in s3:
-    if i in s4:
-        c=c+1
-if c==len(s3)==len(s4):
-    print("True")
+s2=s2.lower()
+s=0
+for ch in s1:
+    if ch not in s2:
+        s=1
+if s==0:
+    print(True)
 else:
-    print("False")
+    print(False)
