@@ -1,9 +1,8 @@
-n=input()
-n1=n.lower()
-s=''
-for i in n1:
-    if i not in s and ord(i)!=32:
-        s=s+i
-k=list(s)
-k.sort()
-print(len(k))
+s=input()
+s=s.lower()
+l=[]
+for ch in s:
+    if ch.isalpha():
+        if ch not in l:
+            l.append(ch)
+print(len(l))
