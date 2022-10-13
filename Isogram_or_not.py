@@ -1,9 +1,14 @@
-n=input()
-s=''
-for i in n:
-    if i  not in s:
-        s=s+i
-if len(n)==len(s):
-    print("True")
+s=input()
+su=0
+for char in s:
+    c=0
+    for chan in s:
+        if char==chan:
+            c+=1
+    if c>1:
+        su=1
+        break
+if su==0:
+    print(True)
 else:
-    print("False")
+    print(False)
