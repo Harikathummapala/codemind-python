@@ -6,3 +6,4 @@ for i in range(n):
         for j in range(arr[i+1]):
             newarr.append(arr[i])
 print(*newarr)
+    
